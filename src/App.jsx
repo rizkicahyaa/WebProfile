@@ -63,7 +63,7 @@ function App() {
           className="w-40 h-40 rounded-full border-4 border-purple-600 shadow-xl"
         />
         <h1 className="text-4xl font-bold mt-6">Rizki Cahya Ramdani</h1>
-        <p className="text-purple-600 dark:text-purple-400 text-lg mt-2">Informatics Student • Frontend Developer</p>
+        <p className="text-purple-600 dark:text-purple-400 text-lg mt-2">Informatics Student • Full-stack Developer</p>
         <p className="mt-6 mb-2 max-w-3xl text-lg leading-relaxed">
           Assalamu'alaikum perkenalkan nama saya Rizki Cahya Ramdani, saya adalah mahasiswa Informatika dari Universitas Amikom Yogyakarta yang tertarik pada dunia IT seperti Full-stack development, UI/UX design, dan Graphic design.
         </p>
