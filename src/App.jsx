@@ -33,28 +33,28 @@ function App() {
   return (
     <>
 
-    <nav className="bg-gray-900 sticky top-0 z-50 shadow-lg p-4">
-      <div className="flex justify-around items-center">
-        {/* Logo */}
-        <div className="text-white text-2xl">
-          <h2>Rizki Cahya</h2>
-        </div>
+      <nav className="bg-gray-900 sticky top-0 z-50 shadow-lg p-4">
+        <div className="flex justify-around items-center">
+          {/* Logo */}
+          <div className="text-white text-2xl">
+            <h2>Rizki Cahya</h2>
+          </div>
 
-        {/* Menu */}
-        <div className={`flex space-x-6 ${isMenuOpen ? 'block' : 'hidden'} md:flex md:space-x-8`}>
-          <a href="#home" className="text-white hover:text-gray-300">Home</a> 
-          <a href="https://medium.com/@rizki.cahya03" target="_blank" className="text-white hover:text-gray-300">Blog</a>
-          <a href="#contact" className="text-white hover:text-gray-300">Contact</a>
-        </div>
+          {/* Menu */}
+          <div className={`flex space-x-6 ${isMenuOpen ? 'block' : 'hidden'} md:flex md:space-x-8`}>
+            <a href="#home" className="text-white hover:text-gray-300">Home</a> 
+            <a href="https://medium.com/@rizki.cahya03" target="_blank" className="text-white hover:text-gray-300">Blog</a>
+            <a href="#contact" className="text-white hover:text-gray-300">Contact</a>
+          </div>
 
-        {/* Hamburger Icon */}
-        <button onClick={toggleMenu} className="md:hidden text-white">
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" className="w-6 h-6">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
-          </svg>
-        </button>
-      </div>
-    </nav>
+          {/* Hamburger Icon */}
+          <button onClick={toggleMenu} className="md:hidden text-white">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" className="w-6 h-6">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+            </svg>
+          </button>
+        </div>
+      </nav>
 
       <section id="home" className="bg-gray-950 px-6 py-16 flex flex-col items-center text-center text-white">
         <img
@@ -113,21 +113,21 @@ function App() {
             type="text"
             name="name"
             placeholder="Nama"
-            className="w-full p-3 rounded-md bg-gray-100 dark:bg-gray-800 border border-gray-300 dark:border-gray-600 focus:outline-none focus:ring-2 focus:ring-purple-600"
+            className="w-full p-3 rounded-md bg-gray-800 border border-gray-300 dark:border-gray-600 focus:outline-none focus:ring-2 focus:ring-purple-600"
             required
           />
           <input
             type="email"
             name="email"
             placeholder="Email"
-            className="w-full p-3 rounded-md bg-gray-100 dark:bg-gray-800 border border-gray-300 dark:border-gray-600 focus:outline-none focus:ring-2 focus:ring-purple-600"
+            className="w-full p-3 rounded-md bg-gray-800 border border-gray-300 dark:border-gray-600 focus:outline-none focus:ring-2 focus:ring-purple-600"
             required
           />
           <textarea
             name="message"
             placeholder="Pesan"
             rows="4"
-            className="w-full p-3 rounded-md bg-gray-100 dark:bg-gray-800 border border-gray-300 dark:border-gray-600 focus:outline-none focus:ring-2 focus:ring-purple-600"
+            className="w-full p-3 rounded-md bg-gray-800 border border-gray-300 dark:border-gray-600 focus:outline-none focus:ring-2 focus:ring-purple-600"
             required
           ></textarea>
           <button
