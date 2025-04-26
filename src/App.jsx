@@ -4,7 +4,7 @@ import emailjs from '@emailjs/browser'
 import './App.css'
 import fotoprofil from './assets/profile-pic.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faInstagram, faFacebook, faLinkedin, faGithub, faHtml5, faCss3Alt, faJs, faReact, faPhp, faPython } from '@fortawesome/free-brands-svg-icons'
+import { faInstagram, faFacebook, faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons'
 
 function App() {
   const form = useRef();
@@ -33,27 +33,49 @@ function App() {
   return (
     <>
 
-      <nav className="bg-gray-900 sticky top-0 z-50 shadow-lg p-4">
-        <div className="flex justify-around items-center">
+      <nav className="bg-gray-900 bg-opacity-70 backdrop-blur-md sticky top-0 z-50 shadow-lg p-4">
+        <div className="container mx-auto flex justify-around items-center">
+          
           {/* Logo */}
-          <div className="text-white text-2xl">
-            <h2>Rizki Cahya</h2>
+          <div className="text-white text-2xl font-bold">
+            Rizki Cahya
           </div>
 
-          {/* Menu */}
-          <div className={`flex space-x-6 ${isMenuOpen ? 'block' : 'hidden'} md:flex md:space-x-8`}>
-            <a href="#home" className="text-white hover:text-gray-300">Home</a> 
-            <a href="https://medium.com/@rizki.cahya03" target="_blank" className="text-white hover:text-gray-300">Blog</a>
-            <a href="#contact" className="text-white hover:text-gray-300">Contact</a>
+          {/* Desktop Menu */}
+          <div className="hidden md:flex space-x-8">
+            <a href="#home" className="text-white hover:text-gray-300 transition">Home</a>
+            <a href="https://medium.com/@rizki.cahya03" target="_blank" rel="noopener noreferrer" className="text-white hover:text-gray-300 transition">Blog</a>
+            <a href="#project" className="text-white hover:text-gray-300 transition">Project</a>
+            <a href="#contact" className="text-white hover:text-gray-300 transition">Contact</a>
           </div>
 
           {/* Hamburger Icon */}
-          <button onClick={toggleMenu} className="md:hidden text-white">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" className="w-6 h-6">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
-            </svg>
-          </button>
+          <div className="md:hidden">
+            <button onClick={toggleMenu} className="text-white focus:outline-none">
+              {isMenuOpen ? (
+                // Icon close
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                </svg>
+              ) : (
+                // Icon hamburger
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+              )}
+            </button>
+          </div>
         </div>
+
+        {/* Mobile Menu */}
+        {isMenuOpen && (
+          <div className="md:hidden flex flex-col items-center mt-4 space-y-4">
+            <a href="#home" className="text-white hover:text-gray-300 transition" onClick={toggleMenu}>Home</a>
+            <a href="https://medium.com/@rizki.cahya03" target="_blank" rel="noopener noreferrer" className="text-white hover:text-gray-300 transition" onClick={toggleMenu}>Blog</a>
+            <a href="#project" className="text-white hover:text-gray-300 transition" onClick={toggleMenu}>Project</a>
+            <a href="#contact" className="text-white hover:text-gray-300 transition" onClick={toggleMenu}>Contact</a>
+          </div>
+        )}
       </nav>
 
       <section id="home" className="bg-gray-950 px-6 py-16 flex flex-col items-center text-center text-white">
@@ -94,17 +116,173 @@ function App() {
         </div>
       </section>
 
-      <section id="technology" className="text-center bg-gray-900 text-white py-32">
-        <h2 className="text-3xl font-bold mb-8">Technology</h2>
-        <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 gap-6 justify-items-center max-w-5xl mx-auto">
-          <FontAwesomeIcon icon={faHtml5} className="text-orange-500 text-7xl" title="HTML5" />
-          <FontAwesomeIcon icon={faCss3Alt} className="text-blue-500 text-7xl" title="CSS3" />
-          <FontAwesomeIcon icon={faJs} className="text-yellow-400 text-7xl" title="JavaScript" />
-          <FontAwesomeIcon icon={faReact} className="text-cyan-400 text-7xl" title="React" />
-          <FontAwesomeIcon icon={faPhp} className="text-indigo-500 text-7xl" title="PHP" />
-          <FontAwesomeIcon icon={faPython} className="text-blue-300 text-7xl" title="Python" />
+      <section id="project" className="text-center bg-gray-900 text-white py-16 px-4">
+        <h2 className="text-3xl font-bold mb-12">My Projects</h2>
+
+        <div className="grid gap-10 sm:grid-cols-2 md:grid-cols-3 max-w-6xl mx-auto">
+          {/* Project Card 1 */}
+          <div className="bg-white dark:bg-gray-800 rounded-2xl shadow-lg p-6 flex flex-col items-center transition hover:-translate-y-2 hover:shadow-2xl">
+            <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-3">Personal Portfolio</h3>
+            
+            <p className="text-gray-600 dark:text-gray-300 text-sm mb-4 text-center">
+              Website portfolio pribadi menggunakan React dan Tailwind CSS untuk tampilan yang responsif.
+            </p>
+
+            {/* Skills */}
+            <div className="flex flex-wrap gap-2 justify-center mb-4">
+              <span className="bg-purple-100 text-purple-700 text-xs font-semibold px-3 py-1 rounded-full">JavaScript</span>
+              <span className="bg-purple-100 text-purple-700 text-xs font-semibold px-3 py-1 rounded-full">React</span>
+              <span className="bg-purple-100 text-purple-700 text-xs font-semibold px-3 py-1 rounded-full">Tailwind CSS</span>
+            </div>
+
+            <a href="https://github.com/rizkicahya-ramdani/web-profile-react" target="_blank" className="mt-auto bg-purple-600 hover:bg-purple-700 text-white font-semibold px-4 py-2 rounded-full text-sm transition">
+              View Project
+            </a>
+          </div>
+
+          {/* Project Card 2 */}
+          <div className="bg-white dark:bg-gray-800 rounded-2xl shadow-lg p-6 flex flex-col items-center transition hover:-translate-y-2 hover:shadow-2xl">
+            <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-3">Sistem Pengaduan Masyarakat</h3>
+            
+            <p className="text-gray-600 dark:text-gray-300 text-sm mb-4 text-center">
+              Sistem pengaduan masyarakat berbasis web menggunakan PHP dan MySQL.
+            </p>
+
+            <div className="flex flex-wrap gap-2 justify-center mb-4">
+              <span className="bg-purple-100 text-purple-700 text-xs font-semibold px-3 py-1 rounded-full">PHP</span>
+              <span className="bg-purple-100 text-purple-700 text-xs font-semibold px-3 py-1 rounded-full">MySQL</span>
+              <span className="bg-purple-100 text-purple-700 text-xs font-semibold px-3 py-1 rounded-full">Bootstrap</span>
+            </div>
+
+            <a href="https://github.com/rizkicahya-ramdani/aplikasi-pengaduan-masyarakat" target="_blank" className="mt-auto bg-purple-600 hover:bg-purple-700 text-white font-semibold px-4 py-2 rounded-full text-sm transition">
+              View Project
+            </a>
+          </div>
+
+          {/* Project Card 3 */}
+          <div className="bg-white dark:bg-gray-800 rounded-2xl shadow-lg p-6 flex flex-col items-center transition hover:-translate-y-2 hover:shadow-2xl">
+            <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-3">Sistem Pemesanan Tiket Hotel</h3>
+            
+            <p className="text-gray-600 dark:text-gray-300 text-sm mb-4 text-center">
+              Sistem pemesanan tiket hotel berbasis web menggunakan CodeIgniter dan MySQL.
+            </p>
+
+            <div className="flex flex-wrap gap-2 justify-center mb-4">
+              <span className="bg-purple-100 text-purple-700 text-xs font-semibold px-3 py-1 rounded-full">PHP</span>
+              <span className="bg-purple-100 text-purple-700 text-xs font-semibold px-3 py-1 rounded-full">CodeIgniter</span>
+              <span className="bg-purple-100 text-purple-700 text-xs font-semibold px-3 py-1 rounded-full">Bootstrap</span>
+              <span className="bg-purple-100 text-purple-700 text-xs font-semibold px-3 py-1 rounded-full">MySQL</span>
+            </div>
+
+            <a href="https://github.com/rizkicahya-ramdani/aplikasi-pemesanan-hotel" target="_blank" className="mt-auto bg-purple-600 hover:bg-purple-700 text-white font-semibold px-4 py-2 rounded-full text-sm transition">
+              View Project
+            </a>
+          </div>
+
+          {/* Project Card 4 */}
+          <div className="bg-white dark:bg-gray-800 rounded-2xl shadow-lg p-6 flex flex-col items-center transition hover:-translate-y-2 hover:shadow-2xl">
+            <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-3">Klasifikasi Penyakit Jantung</h3>
+            
+            <p className="text-gray-600 dark:text-gray-300 text-sm mb-4 text-center">
+              Klasifikasi penyakit jantung menggunakan algoritma Random Forest dan Logistic Regression.
+            </p>
+
+            <div className="flex flex-wrap gap-2 justify-center mb-4">
+              <span className="bg-purple-100 text-purple-700 text-xs font-semibold px-3 py-1 rounded-full">Python</span>
+              <span className="bg-purple-100 text-purple-700 text-xs font-semibold px-3 py-1 rounded-full">Jupyter</span>
+            </div>
+
+            <a href="https://github.com/rizkicahya-ramdani/klasifikasi-penyakit-jantung" target="_blank" className="mt-auto bg-purple-600 hover:bg-purple-700 text-white font-semibold px-4 py-2 rounded-full text-sm transition">
+              View Project
+            </a>
+          </div>
+
+          {/* Project Card 5 */}
+          <div className="bg-white dark:bg-gray-800 rounded-2xl shadow-lg p-6 flex flex-col items-center transition hover:-translate-y-2 hover:shadow-2xl">
+            <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-3">Sistem Pemesanan Tiket Bioskop</h3>
+            
+            <p className="text-gray-600 dark:text-gray-300 text-sm mb-4 text-center">
+              Sistem pemesanan tiket bioskop berbasis web menggunakan PHP dan MySQL.
+            </p>
+
+            <div className="flex flex-wrap gap-2 justify-center mb-4">
+              <span className="bg-purple-100 text-purple-700 text-xs font-semibold px-3 py-1 rounded-full">PHP</span>
+              <span className="bg-purple-100 text-purple-700 text-xs font-semibold px-3 py-1 rounded-full">MySQL</span>
+              <span className="bg-purple-100 text-purple-700 text-xs font-semibold px-3 py-1 rounded-full">Bootstrap</span>
+            </div>
+
+            <a href="https://github.com/Fauzi-Taufiq/bioskop" target="_blank" className="mt-auto bg-purple-600 hover:bg-purple-700 text-white font-semibold px-4 py-2 rounded-full text-sm transition">
+              View Project
+            </a>
+          </div>
+
+          {/* Project Card 6 */}
+          <div className="bg-white dark:bg-gray-800 rounded-2xl shadow-lg p-6 flex flex-col items-center transition hover:-translate-y-2 hover:shadow-2xl">
+            <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-3">Sistem Pemesanan Tiket Hotel (UI/UX)</h3>
+            
+            <p className="text-gray-600 dark:text-gray-300 text-sm mb-4 text-center">
+              Prototype sistem pemesanan tiket hotel berbasis mobile menggunakan Figma.
+            </p>
+
+            <div className="flex flex-wrap gap-2 justify-center mb-4">
+              <span className="bg-purple-100 text-purple-700 text-xs font-semibold px-3 py-1 rounded-full">Figma</span>
+            </div>
+
+            <a href="https://www.figma.com/design/eSa9brf8IkddzMcMuTHBG2/Sistem-Pemesanan-Tiket-Hotel?node-id=0-1&t=K0ksMtmmtNOVZMN9-1" target="_blank" className="mt-auto bg-purple-600 hover:bg-purple-700 text-white font-semibold px-4 py-2 rounded-full text-sm transition">
+              View Project
+            </a>
+          </div>
+        </div>
+
+        {/* Divider */}
+        <div className="border-t border-gray-700 my-16"></div>
+
+        {/* My Skills */}
+        <h2 className="text-2xl mb-8">Here are my main skill:</h2>
+        <div className="flex flex-wrap justify-center gap-8 max-w-4xl mx-auto">
+          
+          {/* Skill Icon */}
+          <div className="flex flex-col items-center">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5" className="w-16 h-16" />
+          </div>
+
+          <div className="flex flex-col items-center">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3" className="w-16 h-16" />
+          </div>
+
+          <div className="flex flex-col items-center">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" className="w-16 h-16" />
+          </div>
+          
+          <div className="flex flex-col items-center">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" alt="PHP" className="w-16 h-16" />
+          </div>
+
+          <div className="flex flex-col items-center">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" className="w-16 h-16" />
+          </div>
+
+          <div className="flex flex-col items-center">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React" className="w-16 h-16" />
+          </div>
+
+          <div className="flex flex-col items-center">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" alt="Bootstrap" className="w-16 h-16" />
+          </div>
+
+          <div className="flex flex-col items-center">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL" className="w-16 h-16" />
+          </div>
+
+          <div className="flex flex-col items-center">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" alt="Figma" className="w-16 h-16" />
+          </div>
+
+
+
         </div>
       </section>
+
 
       <section id="contact" className="bg-gray-950 px-6 py-16 text-center text-white">
         <h2 className="text-3xl font-bold mb-6">Contact me</h2>
