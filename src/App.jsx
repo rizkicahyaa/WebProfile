@@ -1,6 +1,9 @@
+import { useEffect } from 'react'
 import { useRef } from 'react'
 import { useState } from 'react'
 import emailjs from '@emailjs/browser'
+import AOS from 'aos'
+import 'aos/dist/aos.css';
 import './App.css'
 import fotoprofil from './assets/profile-pic.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -29,6 +32,13 @@ function App() {
 
     e.target.reset(); // reset form setelah kirim
   };
+
+  useEffect(() => {
+    AOS.init({
+      once: false,
+      duration: 1500,
+    });
+  }, []);
 
   return (
     <>
@@ -83,18 +93,21 @@ function App() {
           src={fotoprofil}
           alt="Foto Profil"
           className="w-40 h-40 rounded-full border-4 border-purple-600 shadow-xl"
+          data-aos="zoom-in"
+          data-aos-once="false"
         />
-        <h1 className="text-4xl font-bold mt-6">Rizki Cahya Ramdani</h1>
-        <p className="text-purple-600 dark:text-purple-400 text-lg mt-2">Informatics Student • Full-stack Developer</p>
-        <p className="mt-6 mb-2 max-w-3xl text-lg leading-relaxed">
+        <h1 className="text-4xl font-bold mt-6" data-aos="fade-up">Rizki Cahya Ramdani</h1>
+        <p className="text-purple-600 dark:text-purple-400 text-lg mt-2" data-aos="fade-up">Informatics Student • Full-stack Developer</p>
+        <p className="mt-6 mb-2 max-w-3xl text-lg leading-relaxed" data-aos="fade-up">
           Assalamu'alaikum perkenalkan nama saya Rizki Cahya Ramdani, saya adalah mahasiswa Informatika dari Universitas Amikom Yogyakarta yang tertarik pada dunia IT seperti Full-stack development, UI/UX design, dan Graphic design.
         </p>
-        <p className="mt-2 text-gray-500 dark:text-gray-300">📍 Yogyakarta, Indonesia</p>
+        <p className="mt-2 text-gray-500 dark:text-gray-300" data-aos="fade-up">📍 Yogyakarta, Indonesia</p>
 
         <div className="mt-6 flex justify-center gap-4 flex-wrap">
           <a
             href="https://drive.google.com/drive/folders/1LnGOlMOeaopcuz5u5mmCuQ2_zDIi-kK_?usp=sharing" target="_blank"
             className="bg-purple-600 hover:bg-purple-700 px-6 py-3 rounded-full text-white font-medium transition duration-300"
+            data-aos="fade-up"
           >
             Download CV
           </a>
@@ -121,7 +134,7 @@ function App() {
 
         <div className="grid gap-10 sm:grid-cols-2 md:grid-cols-3 max-w-6xl mx-auto">
           {/* Project Card 1 */}
-          <div className="bg-gray-800 rounded-2xl shadow-lg p-6 flex flex-col items-center transition hover:-translate-y-2 hover:shadow-2xl">
+          <div className="bg-gray-800 rounded-2xl shadow-lg p-6 flex flex-col items-center transition hover:-translate-y-2 hover:shadow-2xl" data-aos="flip-left">
             <h3 className="text-xl font-bold text-white mb-3">Personal Portfolio</h3>
             
             <p className="text-gray-300 text-sm mb-4 text-center">
@@ -141,7 +154,7 @@ function App() {
           </div>
 
           {/* Project Card 2 */}
-          <div className="bg-gray-800 rounded-2xl shadow-lg p-6 flex flex-col items-center transition hover:-translate-y-2 hover:shadow-2xl">
+          <div className="bg-gray-800 rounded-2xl shadow-lg p-6 flex flex-col items-center transition hover:-translate-y-2 hover:shadow-2xl" data-aos="flip-left">
             <h3 className="text-xl font-bold text-white mb-3">Sistem Pengaduan Masyarakat</h3>
             
             <p className="text-gray-300 text-sm mb-4 text-center">
@@ -160,7 +173,7 @@ function App() {
           </div>
 
           {/* Project Card 3 */}
-          <div className="bg-gray-800 rounded-2xl shadow-lg p-6 flex flex-col items-center transition hover:-translate-y-2 hover:shadow-2xl">
+          <div className="bg-gray-800 rounded-2xl shadow-lg p-6 flex flex-col items-center transition hover:-translate-y-2 hover:shadow-2xl" data-aos="flip-left">
             <h3 className="text-xl font-bold text-white mb-3">Sistem Pemesanan Tiket Hotel</h3>
             
             <p className="text-gray-300 text-sm mb-4 text-center">
@@ -180,7 +193,7 @@ function App() {
           </div>
 
           {/* Project Card 4 */}
-          <div className="bg-gray-800 rounded-2xl shadow-lg p-6 flex flex-col items-center transition hover:-translate-y-2 hover:shadow-2xl">
+          <div className="bg-gray-800 rounded-2xl shadow-lg p-6 flex flex-col items-center transition hover:-translate-y-2 hover:shadow-2xl" data-aos="flip-left">
             <h3 className="text-xl font-bold text-white mb-3">Klasifikasi Penyakit Jantung</h3>
             
             <p className="text-gray-300 text-sm mb-4 text-center">
@@ -198,7 +211,7 @@ function App() {
           </div>
 
           {/* Project Card 5 */}
-          <div className="bg-gray-800 rounded-2xl shadow-lg p-6 flex flex-col items-center transition hover:-translate-y-2 hover:shadow-2xl">
+          <div className="bg-gray-800 rounded-2xl shadow-lg p-6 flex flex-col items-center transition hover:-translate-y-2 hover:shadow-2xl" data-aos="flip-left">
             <h3 className="text-xl font-bold text-white mb-3">Sistem Pemesanan Tiket Bioskop</h3>
             
             <p className="text-gray-300 text-sm mb-4 text-center">
@@ -217,7 +230,7 @@ function App() {
           </div>
 
           {/* Project Card 6 */}
-          <div className="bg-gray-800 rounded-2xl shadow-lg p-6 flex flex-col items-center transition hover:-translate-y-2 hover:shadow-2xl">
+          <div className="bg-gray-800 rounded-2xl shadow-lg p-6 flex flex-col items-center transition hover:-translate-y-2 hover:shadow-2xl" data-aos="flip-left">
             <h3 className="text-xl font-bold text-white mb-3">Sistem Pemesanan Tiket Hotel (UI/UX)</h3>
             
             <p className="text-gray-300 text-sm mb-4 text-center">
@@ -243,43 +256,43 @@ function App() {
           
           {/* Skill Icon */}
           <div className="flex flex-col items-center">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5" className="w-16 h-16" title="HTML5" />
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5" className="w-16 h-16" title="HTML5" data-aos="flip-right" />
           </div>
 
           <div className="flex flex-col items-center">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3" className="w-16 h-16" title="CSS3" />
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3" className="w-16 h-16" title="CSS3" data-aos="flip-right" data-aos-delay="100" />
           </div>
 
           <div className="flex flex-col items-center">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" className="w-16 h-16" title="JavaScript" />
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" className="w-16 h-16" title="JavaScript" data-aos="flip-right" data-aos-delay="200" />
           </div>
           
           <div className="flex flex-col items-center">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" alt="PHP" className="w-16 h-16" title="PHP" />
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" alt="PHP" className="w-16 h-16" title="PHP" data-aos="flip-right" data-aos-delay="300" />
           </div>
 
           <div className="flex flex-col items-center">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" className="w-16 h-16" title="Python" />
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" className="w-16 h-16" title="Python" data-aos="flip-right" data-aos-delay="400" />
           </div>
 
           <div className="flex flex-col items-center">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React" className="w-16 h-16" title="React" />
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React" className="w-16 h-16" title="React" data-aos="flip-right" data-aos-delay="500" />
           </div>
 
           <div className="flex flex-col items-center">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" alt="Bootstrap" className="w-16 h-16" title="Bootstrap" />
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" alt="Bootstrap" className="w-16 h-16" title="Bootstrap" data-aos="flip-right" data-aos-delay="600" />
           </div>
 
           <div className="flex flex-col items-center">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg" alt="Tailwind CSS" className="w-16 h-16" title="Tailwind CSS" />
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg" alt="Tailwind CSS" className="w-16 h-16" title="Tailwind CSS" data-aos="flip-right" data-aos-delay="700" />
           </div>
 
           <div className="flex flex-col items-center">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL" className="w-16 h-16" title="MySQL" />
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL" className="w-16 h-16" title="MySQL" data-aos="flip-right" data-aos-delay="800" />
           </div>
 
           <div className="flex flex-col items-center">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" alt="Figma" className="w-16 h-16" title="Figma" />
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" alt="Figma" className="w-16 h-16" title="Figma" data-aos="flip-right" data-aos-delay="900" />
           </div>
         </div>
       </section>
