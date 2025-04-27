@@ -121,10 +121,10 @@ function App() {
 
         <div className="grid gap-10 sm:grid-cols-2 md:grid-cols-3 max-w-6xl mx-auto">
           {/* Project Card 1 */}
-          <div className="bg-white dark:bg-gray-800 rounded-2xl shadow-lg p-6 flex flex-col items-center transition hover:-translate-y-2 hover:shadow-2xl">
-            <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-3">Personal Portfolio</h3>
+          <div className="bg-gray-800 rounded-2xl shadow-lg p-6 flex flex-col items-center transition hover:-translate-y-2 hover:shadow-2xl">
+            <h3 className="text-xl font-bold text-white mb-3">Personal Portfolio</h3>
             
-            <p className="text-gray-600 dark:text-gray-300 text-sm mb-4 text-center">
+            <p className="text-gray-300 text-sm mb-4 text-center">
               Website portfolio pribadi menggunakan React dan Tailwind CSS untuk tampilan yang responsif.
             </p>
 
@@ -141,10 +141,10 @@ function App() {
           </div>
 
           {/* Project Card 2 */}
-          <div className="bg-white dark:bg-gray-800 rounded-2xl shadow-lg p-6 flex flex-col items-center transition hover:-translate-y-2 hover:shadow-2xl">
-            <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-3">Sistem Pengaduan Masyarakat</h3>
+          <div className="bg-gray-800 rounded-2xl shadow-lg p-6 flex flex-col items-center transition hover:-translate-y-2 hover:shadow-2xl">
+            <h3 className="text-xl font-bold text-white mb-3">Sistem Pengaduan Masyarakat</h3>
             
-            <p className="text-gray-600 dark:text-gray-300 text-sm mb-4 text-center">
+            <p className="text-gray-300 text-sm mb-4 text-center">
               Sistem pengaduan masyarakat berbasis web menggunakan PHP dan MySQL.
             </p>
 
@@ -160,10 +160,10 @@ function App() {
           </div>
 
           {/* Project Card 3 */}
-          <div className="bg-white dark:bg-gray-800 rounded-2xl shadow-lg p-6 flex flex-col items-center transition hover:-translate-y-2 hover:shadow-2xl">
-            <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-3">Sistem Pemesanan Tiket Hotel</h3>
+          <div className="bg-gray-800 rounded-2xl shadow-lg p-6 flex flex-col items-center transition hover:-translate-y-2 hover:shadow-2xl">
+            <h3 className="text-xl font-bold text-white mb-3">Sistem Pemesanan Tiket Hotel</h3>
             
-            <p className="text-gray-600 dark:text-gray-300 text-sm mb-4 text-center">
+            <p className="text-gray-300 text-sm mb-4 text-center">
               Sistem pemesanan tiket hotel berbasis web menggunakan CodeIgniter dan MySQL.
             </p>
 
@@ -180,10 +180,10 @@ function App() {
           </div>
 
           {/* Project Card 4 */}
-          <div className="bg-white dark:bg-gray-800 rounded-2xl shadow-lg p-6 flex flex-col items-center transition hover:-translate-y-2 hover:shadow-2xl">
-            <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-3">Klasifikasi Penyakit Jantung</h3>
+          <div className="bg-gray-800 rounded-2xl shadow-lg p-6 flex flex-col items-center transition hover:-translate-y-2 hover:shadow-2xl">
+            <h3 className="text-xl font-bold text-white mb-3">Klasifikasi Penyakit Jantung</h3>
             
-            <p className="text-gray-600 dark:text-gray-300 text-sm mb-4 text-center">
+            <p className="text-gray-300 text-sm mb-4 text-center">
               Klasifikasi penyakit jantung menggunakan algoritma Random Forest dan Logistic Regression.
             </p>
 
@@ -198,10 +198,10 @@ function App() {
           </div>
 
           {/* Project Card 5 */}
-          <div className="bg-white dark:bg-gray-800 rounded-2xl shadow-lg p-6 flex flex-col items-center transition hover:-translate-y-2 hover:shadow-2xl">
-            <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-3">Sistem Pemesanan Tiket Bioskop</h3>
+          <div className="bg-gray-800 rounded-2xl shadow-lg p-6 flex flex-col items-center transition hover:-translate-y-2 hover:shadow-2xl">
+            <h3 className="text-xl font-bold text-white mb-3">Sistem Pemesanan Tiket Bioskop</h3>
             
-            <p className="text-gray-600 dark:text-gray-300 text-sm mb-4 text-center">
+            <p className="text-gray-300 text-sm mb-4 text-center">
               Sistem pemesanan tiket bioskop berbasis web menggunakan PHP dan MySQL.
             </p>
 
@@ -217,10 +217,10 @@ function App() {
           </div>
 
           {/* Project Card 6 */}
-          <div className="bg-white dark:bg-gray-800 rounded-2xl shadow-lg p-6 flex flex-col items-center transition hover:-translate-y-2 hover:shadow-2xl">
-            <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-3">Sistem Pemesanan Tiket Hotel (UI/UX)</h3>
+          <div className="bg-gray-800 rounded-2xl shadow-lg p-6 flex flex-col items-center transition hover:-translate-y-2 hover:shadow-2xl">
+            <h3 className="text-xl font-bold text-white mb-3">Sistem Pemesanan Tiket Hotel (UI/UX)</h3>
             
-            <p className="text-gray-600 dark:text-gray-300 text-sm mb-4 text-center">
+            <p className="text-gray-300 text-sm mb-4 text-center">
               Prototype sistem pemesanan tiket hotel berbasis mobile menggunakan Figma.
             </p>
 
