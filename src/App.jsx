@@ -277,9 +277,6 @@ function App() {
           <div className="flex flex-col items-center">
             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" alt="Figma" className="w-16 h-16" />
           </div>
-
-
-
         </div>
       </section>
 
