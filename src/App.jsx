@@ -92,7 +92,7 @@ function App() {
         <img
           src={fotoprofil}
           alt="Foto Profil"
-          className="w-40 h-40 rounded-full border-4 border-purple-600 shadow-xl"
+          className="w-40 h-40 rounded-full border-4 border-purple-100 shadow-xl"
           data-aos="fade-down"
         />
         <h1 className="text-4xl font-bold mt-6" data-aos="fade-left" data-aos-delay="200">Rizki Cahya Ramdani</h1>
