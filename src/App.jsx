@@ -304,21 +304,21 @@ function App() {
             type="text"
             name="name"
             placeholder="Nama"
-            className="w-full p-3 rounded-md bg-gray-800 border border-gray-300 dark:border-gray-600 focus:outline-none focus:ring-2 focus:ring-purple-600"
+            className="w-full p-3 rounded-md bg-gray-800 border border-gray-600 focus:outline-none focus:ring-2 focus:ring-purple-600"
             required
           />
           <input
             type="email"
             name="email"
             placeholder="Email"
-            className="w-full p-3 rounded-md bg-gray-800 border border-gray-300 dark:border-gray-600 focus:outline-none focus:ring-2 focus:ring-purple-600"
+            className="w-full p-3 rounded-md bg-gray-800 border border-gray-600 focus:outline-none focus:ring-2 focus:ring-purple-600"
             required
           />
           <textarea
             name="message"
             placeholder="Pesan"
             rows="4"
-            className="w-full p-3 rounded-md bg-gray-800 border border-gray-300 dark:border-gray-600 focus:outline-none focus:ring-2 focus:ring-purple-600"
+            className="w-full p-3 rounded-md bg-gray-800 border border-gray-600 focus:outline-none focus:ring-2 focus:ring-purple-600"
             required
           ></textarea>
           <button
