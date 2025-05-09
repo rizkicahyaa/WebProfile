@@ -95,8 +95,8 @@ function App() {
           className="w-40 h-40 rounded-full border-4 border-purple-100 shadow-xl"
           data-aos="fade-down"
         />
-        <h1 className="text-4xl font-bold mt-6" data-aos="fade-left" data-aos-delay="200">Rizki Cahya Ramdani</h1>
-        <p className="text-purple-600 dark:text-purple-400 text-lg mt-2" data-aos="fade-right" data-aos-delay="300">Informatics Student • Full-stack Developer</p>
+        <h1 className="text-4xl font-bold mt-6" data-aos="fade-down" data-aos-delay="200">Rizki Cahya Ramdani</h1>
+        <p className="text-purple-600 dark:text-purple-400 text-lg mt-2" data-aos="fade-down" data-aos-delay="300">Informatics Student • Full-stack Developer</p>
         <p className="mt-6 mb-2 max-w-3xl text-lg leading-relaxed" data-aos="fade-up" data-aos-delay="400">
           Assalamu'alaikum perkenalkan nama saya Rizki Cahya Ramdani, saya adalah mahasiswa Informatika dari Universitas Amikom Yogyakarta yang tertarik pada dunia IT seperti Full-stack development, UI/UX design, dan Graphic design.
         </p>
