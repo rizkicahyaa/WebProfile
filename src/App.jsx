@@ -97,16 +97,15 @@ function App() {
         />
         <h1 className="text-4xl font-bold mt-6" data-aos="fade-down" data-aos-delay="200">Rizki Cahya Ramdani</h1>
         <p className="text-purple-600 dark:text-purple-400 text-lg mt-2" data-aos="fade-down" data-aos-delay="300">Informatics Student • Full-stack Developer</p>
-        <p className="mt-6 mb-2 max-w-3xl text-lg leading-relaxed" data-aos="fade-up" data-aos-delay="400">
+        <p className="mt-6 mb-2 max-w-3xl text-lg leading-relaxed" data-aos="fade-down" data-aos-delay="400">
           Assalamu'alaikum perkenalkan nama saya Rizki Cahya Ramdani, saya adalah mahasiswa Informatika dari Universitas Amikom Yogyakarta yang tertarik pada dunia IT seperti Full-stack development, UI/UX design, dan Graphic design.
         </p>
-        <p className="mt-2 text-gray-500 dark:text-gray-300" data-aos="fade-up" data-aos-delay="500">📍 Yogyakarta, Indonesia</p>
+        <p className="mt-2 text-gray-500 dark:text-gray-300">📍 Yogyakarta, Indonesia</p>
 
-        <div className="mt-6 flex justify-center gap-4 flex-wrap" data-aos="fade-up" data-aos-delay="600">
+        <div className="mt-6 flex justify-center gap-4 flex-wrap">
           <a
             href="https://drive.google.com/drive/folders/1LnGOlMOeaopcuz5u5mmCuQ2_zDIi-kK_?usp=sharing" target="_blank"
             className="bg-purple-600 hover:bg-purple-700 px-6 py-3 rounded-full text-white font-medium transition duration-300"
-            data-aos="fade-up"
           >
             Download CV
           </a>
@@ -133,7 +132,7 @@ function App() {
 
         <div className="grid gap-10 sm:grid-cols-2 md:grid-cols-3 max-w-6xl mx-auto">
           {/* Project Card 1 */}
-          <div className="bg-gray-800 rounded-2xl shadow-lg p-6 flex flex-col items-center transition hover:-translate-y-2 hover:shadow-2xl" data-aos="flip-left">
+          <div className="bg-gray-800 rounded-2xl shadow-lg p-6 flex flex-col items-center transition hover:shadow-2xl" data-aos="flip-left">
             <h3 className="text-xl font-bold text-white mb-3">Personal Portfolio</h3>
             
             <p className="text-gray-300 text-sm mb-4 text-center">
@@ -153,7 +152,7 @@ function App() {
           </div>
 
           {/* Project Card 2 */}
-          <div className="bg-gray-800 rounded-2xl shadow-lg p-6 flex flex-col items-center transition hover:-translate-y-2 hover:shadow-2xl" data-aos="flip-left" data-aos-delay="100">
+          <div className="bg-gray-800 rounded-2xl shadow-lg p-6 flex flex-col items-center transition hover:shadow-2xl" data-aos="flip-left" data-aos-delay="100">
             <h3 className="text-xl font-bold text-white mb-3">Sistem Pengaduan Masyarakat</h3>
             
             <p className="text-gray-300 text-sm mb-4 text-center">
@@ -172,7 +171,7 @@ function App() {
           </div>
 
           {/* Project Card 3 */}
-          <div className="bg-gray-800 rounded-2xl shadow-lg p-6 flex flex-col items-center transition hover:-translate-y-2 hover:shadow-2xl" data-aos="flip-left" data-aos-delay="200">
+          <div className="bg-gray-800 rounded-2xl shadow-lg p-6 flex flex-col items-center transition hover:shadow-2xl" data-aos="flip-left" data-aos-delay="200">
             <h3 className="text-xl font-bold text-white mb-3">Sistem Pemesanan Tiket Hotel</h3>
             
             <p className="text-gray-300 text-sm mb-4 text-center">
@@ -192,7 +191,7 @@ function App() {
           </div>
 
           {/* Project Card 4 */}
-          <div className="bg-gray-800 rounded-2xl shadow-lg p-6 flex flex-col items-center transition hover:-translate-y-2 hover:shadow-2xl" data-aos="flip-left" data-aos-delay="300">
+          <div className="bg-gray-800 rounded-2xl shadow-lg p-6 flex flex-col items-center transition hover:shadow-2xl" data-aos="flip-left" data-aos-delay="300">
             <h3 className="text-xl font-bold text-white mb-3">Klasifikasi Penyakit Jantung</h3>
             
             <p className="text-gray-300 text-sm mb-4 text-center">
@@ -210,7 +209,7 @@ function App() {
           </div>
 
           {/* Project Card 5 */}
-          <div className="bg-gray-800 rounded-2xl shadow-lg p-6 flex flex-col items-center transition hover:-translate-y-2 hover:shadow-2xl" data-aos="flip-left" data-aos-delay="400">
+          <div className="bg-gray-800 rounded-2xl shadow-lg p-6 flex flex-col items-center transition hover:shadow-2xl" data-aos="flip-left" data-aos-delay="400">
             <h3 className="text-xl font-bold text-white mb-3">Sistem Pemesanan Tiket Bioskop</h3>
             
             <p className="text-gray-300 text-sm mb-4 text-center">
@@ -229,7 +228,7 @@ function App() {
           </div>
 
           {/* Project Card 6 */}
-          <div className="bg-gray-800 rounded-2xl shadow-lg p-6 flex flex-col items-center transition hover:-translate-y-2 hover:shadow-2xl" data-aos="flip-left" data-aos-delay="500">
+          <div className="bg-gray-800 rounded-2xl shadow-lg p-6 flex flex-col items-center transition hover:shadow-2xl" data-aos="flip-left" data-aos-delay="500">
             <h3 className="text-xl font-bold text-white mb-3">Sistem Pemesanan Tiket Hotel (UI/UX)</h3>
             
             <p className="text-gray-300 text-sm mb-4 text-center">
