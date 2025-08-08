@@ -77,7 +77,7 @@ export default function Navbar() {
                             Blog
                         </a>
 
-                        <Link to="/project" className="text-gray-600 hover:text-purple-600 transition duration-300 font-medium font-['Inter']" onClick={toggleMenu}>Project</Link>
+                        <Link to="/projects" className="text-gray-600 hover:text-purple-600 transition duration-300 font-medium font-['Inter']" onClick={toggleMenu}>Project</Link>
 
                         <Link to="/contact" className="text-gray-600 hover:text-purple-600 transition duration-300 font-medium font-['Inter']" onClick={toggleMenu}>Contact</Link>
                     </div>

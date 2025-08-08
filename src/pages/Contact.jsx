@@ -19,7 +19,7 @@ export default function Contact() {
     };
 
     return (
-        <section id="contact" className="py-32 bg-gradient-to-br from-purple-50 to-pink-50 relative">
+        <section id="contact" className="py-12 bg-gradient-to-br from-purple-50 to-pink-50 relative">
             <div className="container mx-auto px-6">
                 <div className="text-center mb-20">
                     <h2 className="text-4xl font-bold mb-6 font-['Poppins']" data-aos="fade-down">

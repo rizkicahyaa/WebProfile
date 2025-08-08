@@ -5,7 +5,7 @@ import { faInstagram, faFacebook, faLinkedin, faGithub } from '@fortawesome/free
 
 export default function HeroSection() {
     return (
-        <section id="home" className="py-20 bg-gradient-to-br from-white via-purple-50 to-pink-50 relative overflow-hidden">
+        <section id="home" className="py-6 bg-gradient-to-br from-white via-purple-50 to-pink-50 relative overflow-hidden">
             {/* Geometric Background Elements */}
             <div className="absolute inset-0 overflow-hidden">
                 <div className="absolute top-20 left-10 w-32 h-32 bg-purple-200 rounded-full opacity-20 animate-bounce"></div>
@@ -52,7 +52,7 @@ export default function HeroSection() {
                         </div>
 
                         <p className="text-lg text-gray-600 leading-relaxed max-w-lg font-['Inter']">
-                            Assalamu'alaikum perkenalkan nama saya Rizki Cahya Ramdani, saya adalah mahasiswa Informatika dari Universitas Amikom Yogyakarta yang tertarik pada dunia IT seperti Full-stack development, UI/UX design, dan Graphic design.
+                            Hello there, my name is Rizki Cahya Ramdani. I am a computer science student at Amikom University in Yogyakarta who is interested in the world of IT, such as Software engineering.
                         </p>
 
                         <div className="flex items-center space-x-4 text-purple-600 font-medium font-['Inter']">

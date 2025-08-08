@@ -30,13 +30,13 @@ function App() {
                     <>
                         <HeroSection />
                         <Skills />
-                        <Footer />
                     </>
                 }
             />
             <Route path="/projects" element={<Projects />} />
             <Route path="/contact" element={<Contact />} />
         </Routes>
+        <Footer />
     </Router>
   );
 }
