@@ -1,13 +1,14 @@
 import { useEffect } from 'react'
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import AOS from 'aos'
 import 'aos/dist/aos.css';
 import './App.css'
 
 import Navbar from "./components/Navbar.jsx";
 import HeroSection from "./components/HeroSection.jsx";
-import Projects from "./components/Projects.jsx";
+import Projects from "./pages/Projects.jsx";
 import Skills from "./components/Skills.jsx";
-import Contact from "./components/Contact.jsx";
+import Contact from "./pages/Contact.jsx";
 import Footer from "./components/Footer.jsx";
 
 
@@ -20,15 +21,24 @@ function App() {
   }, []);
 
   return (
-    <>
-      <Navbar />
-      <HeroSection />
-      <Projects />
-      <Skills />
-      <Contact />
-      <Footer />
-    </>
-  )
+    <Router>
+        <Navbar />
+        <Routes>
+            <Route
+                path="/"
+                element={
+                    <>
+                        <HeroSection />
+                        <Skills />
+                        <Footer />
+                    </>
+                }
+            />
+            <Route path="/projects" element={<Projects />} />
+            <Route path="/contact" element={<Contact />} />
+        </Routes>
+    </Router>
+  );
 }
 
 export default App

@@ -1,5 +1,6 @@
 import React from "react";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 export default function Navbar() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -17,25 +18,35 @@ export default function Navbar() {
                         <span className="text-gray-700">Cahya</span>
                     </div>
 
+                     {/* desktop menu */}
                     <div className="hidden md:flex space-x-8">
-                        <a href="#home" className="text-gray-600 hover:text-purple-600 transition-all duration-300 font-medium relative group font-['Inter']">
+                        <Link to="/" className="text-gray-600 hover:text-purple-600 transition-all duration-300 font-medium relative group font-['Inter']">
                             <span className="relative z-10">Home</span>
                             <div className="absolute inset-0 bg-purple-100 rounded-full scale-0 group-hover:scale-100 transition-transform duration-300"></div>
-                        </a>
-                        <a href="https://medium.com/@rizki.cahya03" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-purple-600 transition-all duration-300 font-medium relative group font-['Inter']">
+                        </Link>
+
+                        <a
+                            href="https://medium.com/@rizki.cahya03"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="text-gray-600 hover:text-purple-600 transition-all duration-300 font-medium relative group font-['Inter']"
+                        >
                             <span className="relative z-10">Blog</span>
                             <div className="absolute inset-0 bg-purple-100 rounded-full scale-0 group-hover:scale-100 transition-transform duration-300"></div>
                         </a>
-                        <a href="#project" className="text-gray-600 hover:text-purple-600 transition-all duration-300 font-medium relative group font-['Inter']">
+
+                        <Link to="/projects" className="text-gray-600 hover:text-purple-600 transition-all duration-300 font-medium relative group font-['Inter']">
                             <span className="relative z-10">Project</span>
                             <div className="absolute inset-0 bg-purple-100 rounded-full scale-0 group-hover:scale-100 transition-transform duration-300"></div>
-                        </a>
-                        <a href="#contact" className="text-gray-600 hover:text-purple-600 transition-all duration-300 font-medium relative group font-['Inter']">
+                        </Link>
+
+                        <Link to="/contact" className="text-gray-600 hover:text-purple-600 transition-all duration-300 font-medium relative group font-['Inter']">
                             <span className="relative z-10">Contact</span>
                             <div className="absolute inset-0 bg-purple-100 rounded-full scale-0 group-hover:scale-100 transition-transform duration-300"></div>
-                        </a>
+                        </Link>
                     </div>
 
+                    {/* mobile toggle */}
                     <div className="md:hidden">
                         <button onClick={toggleMenu} className="text-gray-600 focus:outline-none">
                             {isMenuOpen ? (
@@ -51,12 +62,24 @@ export default function Navbar() {
                     </div>
                 </div>
 
+                {/* Menu mobile */}
                 {isMenuOpen && (
                     <div className="md:hidden flex flex-col items-center mt-6 space-y-4 pb-4">
-                        <a href="#home" className="text-gray-600 hover:text-purple-600 transition duration-300 font-medium font-['Inter']" onClick={toggleMenu}>Home</a>
-                        <a href="https://medium.com/@rizki.cahya03" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-purple-600 transition duration-300 font-medium font-['Inter']" onClick={toggleMenu}>Blog</a>
-                        <a href="#project" className="text-gray-600 hover:text-purple-600 transition duration-300 font-medium font-['Inter']" onClick={toggleMenu}>Project</a>
-                        <a href="#contact" className="text-gray-600 hover:text-purple-600 transition duration-300 font-medium font-['Inter']" onClick={toggleMenu}>Contact</a>
+                        <Link to="/" className="text-gray-600 hover:text-purple-600 transition duration-300 font-medium font-['Inter']" onClick={toggleMenu}>Home</Link>
+
+                        <a
+                            href="https://medium.com/@rizki.cahya03"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="text-gray-600 hover:text-purple-600 transition duration-300 font-medium font-['Inter']"
+                            onClick={toggleMenu}
+                        >
+                            Blog
+                        </a>
+
+                        <Link to="/project" className="text-gray-600 hover:text-purple-600 transition duration-300 font-medium font-['Inter']" onClick={toggleMenu}>Project</Link>
+
+                        <Link to="/contact" className="text-gray-600 hover:text-purple-600 transition duration-300 font-medium font-['Inter']" onClick={toggleMenu}>Contact</Link>
                     </div>
                 )}
             </div>
