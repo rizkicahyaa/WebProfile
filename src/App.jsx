@@ -6,6 +6,7 @@ import './App.css'
 import Navbar from "./components/Navbar.jsx";
 import HeroSection from "./components/HeroSection.jsx";
 import Projects from "./components/Projects.jsx";
+import Skills from "./components/Skills.jsx";
 import Contact from "./components/Contact.jsx";
 import Footer from "./components/Footer.jsx";
 
@@ -23,6 +24,7 @@ function App() {
       <Navbar />
       <HeroSection />
       <Projects />
+      <Skills />
       <Contact />
       <Footer />
     </>
