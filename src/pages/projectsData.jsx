@@ -1,10 +1,10 @@
 export const projects = [
     {
-        title: "Personal Portfolio",
-        description: "Personal portfolio website using React and Tailwind CSS for a responsive design.",
-        tech: ["React", "Tailwind CSS", "Vite"],
-        link: "https://github.com/rizkicahya-ramdani/web-profile-react",
-        image: "/images/personal-profile.png",
+        title: "Account Game Store",
+        description: "Account Game Store with responsive layout using Laravel 11 & Tailwind CSS",
+        tech: ["Laravel", "Tailwind CSS", "Vite"],
+        link: "https://github.com/Fauzi-Taufiq/nexakun-accountstore.git",
+        image: "/images/account-store-game.png",
         delay: 0
     },
     {
@@ -24,24 +24,19 @@ export const projects = [
         delay: 200
     },
     {
-        title: "Heart Disease Classification",
-        description: "Heart disease classification using Random Forest and Logistic Regression algorithms.",
-        tech: ["Python", "Jupyter"],
-        link: "https://github.com/rizkicahya-ramdani/klasifikasi-penyakit-jantung",
-        delay: 300
-    },
-    {
         title: "Cinema Ticket Booking System",
         description: "A web-based cinema ticket booking system using PHP and MySQL.",
         tech: ["PHP", "MySQL", "Bootstrap"],
         link: "https://github.com/Fauzi-Taufiq/bioskop",
-        delay: 400
+        image: "/images/cinema-ticket-booking.png",
+        delay: 300
     },
     {
         title: "Hotel Ticket Booking System (UI/UX)",
         description: "A mobile-based hotel ticket booking system prototype using Figma.",
         tech: ["Figma"],
         link: "https://www.figma.com/design/eSa9brf8IkddzMcMuTHBG2/Sistem-Pemesanan-Tiket-Hotel?node-id=0-1&t=K0ksMtmmtNOVZMN9-1",
-        delay: 500
+        image: "/images/hotel-booking-uiux.png",
+        delay: 400
     }
 ];
