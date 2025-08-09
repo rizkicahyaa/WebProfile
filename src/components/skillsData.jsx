@@ -20,43 +20,48 @@ export const skills = [
         delay: 300,
     },
     {
+        name: "Python",
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg",
+        delay: 400,
+    },
+    {
         name: "React",
         icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
-        delay: 400,
+        delay: 500,
     },
     {
         name: "Laravel",
         icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/laravel/laravel-original.svg",
-        delay: 500,
+        delay: 600,
     },
     {
         name: "Bootstrap",
         icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg",
-        delay: 600,
+        delay: 700,
     },
     {
         name: "Tailwind CSS",
         icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg",
-        delay: 700,
+        delay: 800,
     },
     {
         name: "MySQL",
         icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg",
-        delay: 800,
+        delay: 900,
     },
     {
-        name: "NodeJS",
+        name: "Node.js",
         icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg",
-        delay: 900,
+        delay: 1000,
     },
     {
         name: "Docker",
         icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg",
-        delay: 1000,
+        delay: 1100,
     },
     {
         name: "Figma",
         icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg",
-        delay: 1100,
+        delay: 1200,
     },
 ];
