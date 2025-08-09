@@ -12,7 +12,7 @@ export const projects = [
         description: "A blog creation system with a responsive layout using PHP, MySQL, Tailwind CSS, and Docker",
         tech: ["PHP", "MySQL", "Tailwind CSS", "Docker"],
         link: "https://github.com/rizkicahya-ramdani/ClaireBlog",
-        image: "public/images/blog-system.png",
+        image: "/images/blog-system.png",
         delay: 100
     },
     {
@@ -20,7 +20,7 @@ export const projects = [
         description: "A web-based hotel ticket booking system using CodeIgniter and MySQL.",
         tech: ["PHP", "CodeIgniter", "Bootstrap", "MySQL"],
         link: "https://github.com/rizkicahya-ramdani/aplikasi-pemesanan-hotel",
-        image: "public/images/hotel-booking.png",
+        image: "/images/hotel-booking.png",
         delay: 200
     },
     {
