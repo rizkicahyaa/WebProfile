@@ -4,7 +4,7 @@ export const projects = [
         description: "Personal portfolio website using React and Tailwind CSS for a responsive design.",
         tech: ["React", "Tailwind CSS", "Vite"],
         link: "https://github.com/rizkicahya-ramdani/web-profile-react",
-        image: "public/images/personal-profile.png",
+        image: "../public/images/personal-profile.png",
         delay: 0
     },
     {
