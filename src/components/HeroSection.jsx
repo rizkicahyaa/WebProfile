@@ -52,7 +52,7 @@ export default function HeroSection() {
                         </div>
 
                         <p className="text-lg text-gray-600 leading-relaxed max-w-lg font-['Inter']">
-                            Hello there, my name is Rizki Cahya Ramdani. I am a computer science student at Amikom University in Yogyakarta who is interested in the world of IT, such as Software engineering.
+                            Hello there, my name is Rizki Cahya Ramdani. I am a Computer Science student at Amikom University in Yogyakarta who is interested in the world of IT, such as Software engineering.
                         </p>
 
                         <div className="flex items-center space-x-4 text-purple-600 font-medium font-['Inter']">

@@ -6,6 +6,7 @@ import './App.css'
 
 import Navbar from "./components/Navbar.jsx";
 import HeroSection from "./components/HeroSection.jsx";
+import EduEx from "./components/EduEx.jsx";
 import Projects from "./pages/Projects.jsx";
 import Skills from "./components/Skills.jsx";
 import Contact from "./pages/Contact.jsx";
@@ -29,6 +30,7 @@ function App() {
                 element={
                     <>
                         <HeroSection />
+                        <EduEx />
                         <Skills />
                     </>
                 }
