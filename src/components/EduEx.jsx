@@ -14,8 +14,9 @@ export default function EduEx() {
                     <div className="w-24 h-1 bg-gradient-to-r from-purple-600 to-pink-600 mx-auto"></div>
                 </div>
 
-                {/* Timeline tanpa garis */}
                 <div className="max-w-5xl mx-auto space-y-10">
+
+                    <h3 className="text-2xl font-medium font-['Poppins']" data-aos="fade-up">Educations</h3>
 
                     <div className="flex items-start space-x-4" data-aos="fade-up">
                         <img src="/images/amikom-logo.png" alt="Circle" className="w-12 h-12 mt-4" />
@@ -41,6 +42,22 @@ export default function EduEx() {
                             </p>
                             <p className="text-sm text-gray-800">
                                 Completed a vocational program in Software Engineering, specializing in web and desktop application development. Studied software development lifecycle, database management, and object-oriented programming.
+                            </p>
+                        </div>
+                    </div>
+
+                    <h3 className="text-2xl font-medium font-['Poppins']" data-aos="fade-up">Experience</h3>
+
+                    <div className="flex items-start space-x-4" data-aos="fade-up">
+                        <img src="/images/forum-asisten.png" alt="Circle" className="w-12 h-12 mt-4" />
+                        <div>
+                            <time className="mb-1 text-sm font-normal text-gray-500">February, 2025 - July, 2025</time>
+                            <h3 className="text-lg font-semibold text-gray-900">Laboratory Asistant</h3>
+                            <p className="text-base font-normal text-gray-600 mb-2">
+                                Forum Asisten, Universitas Amikom Yogyakarta
+                            </p>
+                            <p className="text-sm text-gray-800">
+                                Served as a Laboratory Assistant for Programming and Web Programming courses, guiding students through practical sessions, assisting in troubleshooting coding issues, and supporting lecturers in delivering hands-on learning materials.
                             </p>
                         </div>
                     </div>
