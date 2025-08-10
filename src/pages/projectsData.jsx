@@ -32,11 +32,27 @@ export const projects = [
         delay: 300
     },
     {
+        title: "Lost Lantern Studio",
+        description: "Landing page studio game using HTML, Tailwind CSS, and AOS.",
+        tech: ["HTML", "Tailwind CSS"],
+        link: "https://github.com/rizkicahya-ramdani/lostlantern-page",
+        image: "/images/lost-lantern.png",
+        delay: 400
+    },
+    {
+        title: "Flory Web",
+        description: "A website development services using HTML, Tailwind CSS, and AOS.",
+        tech: ["HTML", "Tailwind CSS"],
+        link: "https://github.com/rizkicahya-ramdani/floryweb-landingpage",
+        image: "/images/flory-web.png",
+        delay: 500
+    },
+    {
         title: "Hotel Ticket Booking System (UI/UX)",
         description: "A mobile-based hotel ticket booking system prototype using Figma.",
         tech: ["Figma"],
         link: "https://www.figma.com/design/eSa9brf8IkddzMcMuTHBG2/Sistem-Pemesanan-Tiket-Hotel?node-id=0-1&t=K0ksMtmmtNOVZMN9-1",
         image: "/images/hotel-booking-uiux.png",
-        delay: 400
+        delay: 600
     }
 ];
