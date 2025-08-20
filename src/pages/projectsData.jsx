@@ -32,12 +32,20 @@ export const projects = [
         delay: 300
     },
     {
+        title: "Public Complaint System",
+        description: "Web apps public complaints system using PHP and MySQL.",
+        tech: ["PHP", "MySQL", "Bootstrap"],
+        link: "https://github.com/rizkicahya-ramdani/ngadu-claire",
+        image: "/images/public-complaint.png",
+        delay: 400
+    },
+    {
         title: "Lost Lantern Studio",
         description: "Landing page studio game using HTML, Tailwind CSS, and AOS.",
         tech: ["HTML", "Tailwind CSS"],
         link: "https://github.com/rizkicahya-ramdani/lostlantern-page",
         image: "/images/lost-lantern.png",
-        delay: 400
+        delay: 500
     },
     {
         title: "Flory Web",
@@ -45,7 +53,7 @@ export const projects = [
         tech: ["HTML", "Tailwind CSS"],
         link: "https://github.com/rizkicahya-ramdani/floryweb-landingpage",
         image: "/images/flory-web.png",
-        delay: 500
+        delay: 600
     },
     {
         title: "Hotel Ticket Booking System (UI/UX)",
@@ -53,6 +61,6 @@ export const projects = [
         tech: ["Figma"],
         link: "https://www.figma.com/design/eSa9brf8IkddzMcMuTHBG2/Sistem-Pemesanan-Tiket-Hotel?node-id=0-1&t=K0ksMtmmtNOVZMN9-1",
         image: "/images/hotel-booking-uiux.png",
-        delay: 600
+        delay: 700
     }
 ];
