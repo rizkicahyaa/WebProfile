@@ -1,66 +1,73 @@
 export const projects = [
     {
-        title: "Account Game Store",
-        description: "Account Game Store with responsive layout using Laravel 11 & Tailwind CSS",
+        title: "Nexakun",
+        description:
+            "Account Game Store with responsive layout using Laravel 11 and Tailwind CSS",
         tech: ["Laravel", "Tailwind CSS", "Vite"],
         link: "https://github.com/Fauzi-Taufiq/nexakun-accountstore.git",
         image: "/images/account-store-game.png",
-        delay: 0
+        delay: 0,
     },
     {
-        title: "Blog System",
-        description: "A blog creation system with a responsive layout using PHP, MySQL, Tailwind CSS, and Docker",
+        title: "Jogja Culinary",
+        description:
+            "A culinary website in Yogyakarta with a responsive layout using React, Tailwind CSS, and MySQL",
+        tech: ["Vite", "React", "Tailwind CSS", "MySQL"],
+        link: "https://github.com/rizkicahya-ramdani/jogja-culinary",
+        image: "/images/jogja-culinary.png",
+        delay: 100,
+    },
+    {
+        title: "ClaireBlog",
+        description:
+            "A blog creation system with a responsive layout using PHP, MySQL, Tailwind CSS, and Docker",
         tech: ["PHP", "MySQL", "Tailwind CSS", "Docker"],
         link: "https://github.com/rizkicahya-ramdani/ClaireBlog",
         image: "/images/blog-system.png",
-        delay: 100
+        delay: 200,
     },
     {
-        title: "Hotel Ticket Booking System",
-        description: "A web-based hotel ticket booking system using CodeIgniter and MySQL.",
+        title: "Crimson Hotel",
+        description:
+            "A web-based hotel ticket booking system using CodeIgniter and MySQL.",
         tech: ["PHP", "CodeIgniter", "Bootstrap", "MySQL"],
         link: "https://github.com/rizkicahya-ramdani/aplikasi-pemesanan-hotel",
         image: "/images/hotel-booking.png",
-        delay: 200
+        delay: 300,
     },
     {
-        title: "Cinema Ticket Booking System",
-        description: "A web-based cinema ticket booking system using PHP and MySQL.",
+        title: "MovieTix",
+        description:
+            "A web-based cinema ticket booking system using PHP and MySQL.",
         tech: ["PHP", "MySQL", "Bootstrap"],
         link: "https://github.com/Fauzi-Taufiq/bioskop",
         image: "/images/cinema-ticket-booking.png",
-        delay: 300
+        delay: 400,
     },
     {
-        title: "Public Complaint System",
+        title: "NgaduClaire",
         description: "Web apps public complaints system using PHP and MySQL.",
         tech: ["PHP", "MySQL", "Bootstrap"],
         link: "https://github.com/rizkicahya-ramdani/ngadu-claire",
         image: "/images/public-complaint.png",
-        delay: 400
+        delay: 500,
     },
     {
         title: "Lost Lantern Studio",
-        description: "Landing page studio game using HTML, Tailwind CSS, and AOS.",
+        description:
+            "Landing page studio game using HTML, Tailwind CSS, and AOS.",
         tech: ["HTML", "Tailwind CSS"],
         link: "https://github.com/rizkicahya-ramdani/lostlantern-page",
         image: "/images/lost-lantern.png",
-        delay: 500
+        delay: 600,
     },
     {
-        title: "Flory Web",
-        description: "A website development services using HTML, Tailwind CSS, and AOS.",
-        tech: ["HTML", "Tailwind CSS"],
-        link: "https://github.com/rizkicahya-ramdani/floryweb-landingpage",
-        image: "/images/flory-web.png",
-        delay: 600
-    },
-    {
-        title: "Hotel Ticket Booking System (UI/UX)",
-        description: "A mobile-based hotel ticket booking system prototype using Figma.",
+        title: "Ngawikerto Hotel Ticket Booking System (UI/UX)",
+        description:
+            "A mobile-based hotel ticket booking system prototype using Figma.",
         tech: ["Figma"],
         link: "https://www.figma.com/design/eSa9brf8IkddzMcMuTHBG2/Sistem-Pemesanan-Tiket-Hotel?node-id=0-1&t=K0ksMtmmtNOVZMN9-1",
         image: "/images/hotel-booking-uiux.png",
-        delay: 700
-    }
+        delay: 700,
+    },
 ];
