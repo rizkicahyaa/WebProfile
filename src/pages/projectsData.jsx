@@ -3,7 +3,7 @@ export const projects = [
         title: "Nexakun",
         description:
             "Account Game Store with responsive layout using Laravel 11 and Tailwind CSS",
-        tech: ["Laravel", "Tailwind CSS", "Vite"],
+        tech: ["Vite", "PHP", "Laravel", "Tailwind CSS"],
         link: "https://github.com/Fauzi-Taufiq/nexakun-accountstore.git",
         image: "/images/account-store-game.png",
         delay: 0,
@@ -12,7 +12,14 @@ export const projects = [
         title: "Jogja Culinary",
         description:
             "A culinary website in Yogyakarta with a responsive layout using React, Tailwind CSS, and MySQL",
-        tech: ["Vite", "React", "Tailwind CSS", "MySQL"],
+        tech: [
+            "Vite",
+            "Javascript",
+            "React",
+            "Tailwind CSS",
+            "Node.js",
+            "MySQL",
+        ],
         link: "https://github.com/rizkicahya-ramdani/jogja-culinary",
         image: "/images/jogja-culinary.png",
         delay: 100,
@@ -21,7 +28,7 @@ export const projects = [
         title: "ClaireBlog",
         description:
             "A blog creation system with a responsive layout using PHP, MySQL, Tailwind CSS, and Docker",
-        tech: ["PHP", "MySQL", "Tailwind CSS", "Docker"],
+        tech: ["PHP", "Tailwind CSS", "MySQL", "Docker"],
         link: "https://github.com/rizkicahya-ramdani/ClaireBlog",
         image: "/images/blog-system.png",
         delay: 200,
@@ -30,7 +37,7 @@ export const projects = [
         title: "Crimson Hotel",
         description:
             "A web-based hotel ticket booking system using CodeIgniter and MySQL.",
-        tech: ["PHP", "CodeIgniter", "Bootstrap", "MySQL"],
+        tech: ["PHP", "Bootstrap", "Codeigniter", "MySQL"],
         link: "https://github.com/rizkicahya-ramdani/aplikasi-pemesanan-hotel",
         image: "/images/hotel-booking.png",
         delay: 300,
@@ -39,7 +46,7 @@ export const projects = [
         title: "MovieTix",
         description:
             "A web-based cinema ticket booking system using PHP and MySQL.",
-        tech: ["PHP", "MySQL", "Bootstrap"],
+        tech: ["PHP", "Bootstrap", "MySQL"],
         link: "https://github.com/Fauzi-Taufiq/bioskop",
         image: "/images/cinema-ticket-booking.png",
         delay: 400,
@@ -47,7 +54,7 @@ export const projects = [
     {
         title: "NgaduClaire",
         description: "Web apps public complaints system using PHP and MySQL.",
-        tech: ["PHP", "MySQL", "Bootstrap"],
+        tech: ["PHP", "Bootstrap", "MySQL"],
         link: "https://github.com/rizkicahya-ramdani/ngadu-claire",
         image: "/images/public-complaint.png",
         delay: 500,
@@ -69,5 +76,14 @@ export const projects = [
         link: "https://www.figma.com/design/eSa9brf8IkddzMcMuTHBG2/Sistem-Pemesanan-Tiket-Hotel?node-id=0-1&t=K0ksMtmmtNOVZMN9-1",
         image: "/images/hotel-booking-uiux.png",
         delay: 700,
+    },
+    {
+        title: "PayCuan E-Wallet (UI/UX)",
+        description:
+            "A mobile-based e-wallet application prototype using Figma.",
+        tech: ["Figma"],
+        link: "https://www.figma.com/design/kW5uDRZwaYyAR7339g3jhz/Mockup-Sistem-E-Wallet--PayCuan-?node-id=119-3&t=tugfB4IN6ZLYsd4h-1",
+        image: "/images/paycuan.png",
+        delay: 800,
     },
 ];
