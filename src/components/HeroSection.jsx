@@ -79,7 +79,7 @@ export default function HeroSection() {
                             <a href="https://linkedin.com/in/rizkicahya" className="text-purple-600 hover:text-pink-600 transition-all duration-300 hover:scale-110" target="_blank" rel="noopener noreferrer">
                                 <FontAwesomeIcon icon={faLinkedin} />
                             </a>
-                            <a href="https://github.com/rizkicahya-ramdani" className="text-purple-600 hover:text-pink-600 transition-all duration-300 hover:scale-110" target="_blank" rel="noopener noreferrer">
+                            <a href="https://github.com/rizkicahyaa" className="text-purple-600 hover:text-pink-600 transition-all duration-300 hover:scale-110" target="_blank" rel="noopener noreferrer">
                                 <FontAwesomeIcon icon={faGithub} />
                             </a>
                             <a href="https://www.facebook.com/profile.php?id=100088670947673" className="text-purple-600 hover:text-pink-600 transition-all duration-300 hover:scale-110" target="_blank" rel="noopener noreferrer">
