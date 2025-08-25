@@ -1,7 +1,7 @@
 import React from "react";
-import fotoprofil from '../assets/profile-pic.png'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faInstagram, faFacebook, faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons'
+import fotoprofil from "../assets/profile-pic.png";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faInstagram, faFacebook, faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
 
 export default function HeroSection() {
     return (
@@ -25,11 +25,7 @@ export default function HeroSection() {
 
                             {/* Main Profile Image */}
                             <div className="relative z-10">
-                                <img
-                                    src={fotoprofil}
-                                    alt="Foto Profil"
-                                    className="w-80 h-80 rounded-full object-cover shadow-2xl border-8 border-white"
-                                />
+                                <img src={fotoprofil} alt="Foto Profil" className="w-80 h-80 rounded-full object-cover shadow-2xl border-8 border-white" />
                             </div>
                         </div>
                     </div>
@@ -51,9 +47,7 @@ export default function HeroSection() {
                             </div>
                         </div>
 
-                        <p className="text-lg text-gray-600 leading-relaxed max-w-lg font-['Inter']">
-                            Hello there, my name is Rizki Cahya Ramdani. I am a Computer Science student at Amikom University in Yogyakarta who is interested in the world of IT, such as Software engineering.
-                        </p>
+                        <p className="text-lg text-gray-600 leading-relaxed max-w-lg font-['Inter']">Hello there, my name is Rizki Cahya Ramdani. I am a Computer Science student at Amikom University in Yogyakarta who is interested in the world of IT, such as Software engineering.</p>
 
                         <div className="flex items-center space-x-4 text-purple-600 font-medium font-['Inter']">
                             <span className="text-2xl">📍</span>
@@ -61,11 +55,7 @@ export default function HeroSection() {
                         </div>
 
                         <div className="flex space-x-4">
-                            <a
-                                href="https://drive.google.com/drive/folders/1LnGOlMOeaopcuz5u5mmCuQ2_zDIi-kK_?usp=sharing"
-                                target="_blank"
-                                className="group relative px-8 py-4 bg-gradient-to-r from-purple-600 to-pink-600 text-white font-medium rounded-full overflow-hidden transition-all duration-300 hover:shadow-2xl hover:-translate-y-1 font-['Inter']"
-                            >
+                            <a href="https://drive.google.com/drive/folders/1LnGOlMOeaopcuz5u5mmCuQ2_zDIi-kK_?usp=sharing" target="_blank" className="group relative px-8 py-4 bg-gradient-to-r from-purple-600 to-pink-600 text-white font-medium rounded-full overflow-hidden transition-all duration-300 hover:shadow-2xl hover:-translate-y-1 font-['Inter']">
                                 <span className="relative z-10">Download CV</span>
                                 <div className="absolute inset-0 bg-gradient-to-r from-pink-600 to-purple-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                             </a>
@@ -91,4 +81,4 @@ export default function HeroSection() {
             </div>
         </section>
     );
-};
+}
