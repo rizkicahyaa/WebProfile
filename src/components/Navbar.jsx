@@ -1,6 +1,8 @@
 import React from "react";
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faHouse, faBlog, faFolderOpen, faEnvelope } from "@fortawesome/free-solid-svg-icons";
 
 export default function Navbar() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -21,7 +23,10 @@ export default function Navbar() {
                      {/* desktop menu */}
                     <div className="hidden md:flex space-x-8">
                         <Link to="/" className="text-gray-600 hover:text-purple-600 transition-all duration-300 font-medium relative group font-['Inter']">
-                            <span className="relative z-10">Home</span>
+                            <span className="relative z-10 inline-flex items-center gap-2">
+                                <FontAwesomeIcon icon={faHouse} />
+                                Home
+                            </span>
                             <div className="absolute inset-0 bg-purple-100 rounded-full scale-0 group-hover:scale-100 transition-transform duration-300"></div>
                         </Link>
 
@@ -31,17 +36,26 @@ export default function Navbar() {
                             rel="noopener noreferrer"
                             className="text-gray-600 hover:text-purple-600 transition-all duration-300 font-medium relative group font-['Inter']"
                         >
-                            <span className="relative z-10">Blog</span>
+                            <span className="relative z-10 inline-flex items-center gap-2">
+                                <FontAwesomeIcon icon={faBlog} />
+                                Blog
+                            </span>
                             <div className="absolute inset-0 bg-purple-100 rounded-full scale-0 group-hover:scale-100 transition-transform duration-300"></div>
                         </a>
 
                         <Link to="/projects" className="text-gray-600 hover:text-purple-600 transition-all duration-300 font-medium relative group font-['Inter']">
-                            <span className="relative z-10">Project</span>
+                            <span className="relative z-10 inline-flex items-center gap-2">
+                                <FontAwesomeIcon icon={faFolderOpen} />
+                                Project
+                            </span>
                             <div className="absolute inset-0 bg-purple-100 rounded-full scale-0 group-hover:scale-100 transition-transform duration-300"></div>
                         </Link>
 
                         <Link to="/contact" className="text-gray-600 hover:text-purple-600 transition-all duration-300 font-medium relative group font-['Inter']">
-                            <span className="relative z-10">Contact</span>
+                            <span className="relative z-10 inline-flex items-center gap-2">
+                                <FontAwesomeIcon icon={faEnvelope} />
+                                Contact
+                            </span>
                             <div className="absolute inset-0 bg-purple-100 rounded-full scale-0 group-hover:scale-100 transition-transform duration-300"></div>
                         </Link>
                     </div>
@@ -65,21 +79,31 @@ export default function Navbar() {
                 {/* Menu mobile */}
                 {isMenuOpen && (
                     <div className="md:hidden flex flex-col items-center mt-6 space-y-4 pb-4">
-                        <Link to="/" className="text-gray-600 hover:text-purple-600 transition duration-300 font-medium font-['Inter']" onClick={toggleMenu}>Home</Link>
+                        <Link to="/" className="text-gray-600 hover:text-purple-600 transition duration-300 font-medium font-['Inter'] inline-flex items-center gap-2" onClick={toggleMenu}>
+                            <FontAwesomeIcon icon={faHouse} />
+                            Home
+                        </Link>
 
                         <a
                             href="https://medium.com/@rizki.cahya03"
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="text-gray-600 hover:text-purple-600 transition duration-300 font-medium font-['Inter']"
+                            className="text-gray-600 hover:text-purple-600 transition duration-300 font-medium font-['Inter'] inline-flex items-center gap-2"
                             onClick={toggleMenu}
                         >
+                            <FontAwesomeIcon icon={faBlog} />
                             Blog
                         </a>
 
-                        <Link to="/projects" className="text-gray-600 hover:text-purple-600 transition duration-300 font-medium font-['Inter']" onClick={toggleMenu}>Project</Link>
+                        <Link to="/projects" className="text-gray-600 hover:text-purple-600 transition duration-300 font-medium font-['Inter'] inline-flex items-center gap-2" onClick={toggleMenu}>
+                            <FontAwesomeIcon icon={faFolderOpen} />
+                            Project
+                        </Link>
 
-                        <Link to="/contact" className="text-gray-600 hover:text-purple-600 transition duration-300 font-medium font-['Inter']" onClick={toggleMenu}>Contact</Link>
+                        <Link to="/contact" className="text-gray-600 hover:text-purple-600 transition duration-300 font-medium font-['Inter'] inline-flex items-center gap-2" onClick={toggleMenu}>
+                            <FontAwesomeIcon icon={faEnvelope} />
+                            Contact
+                        </Link>
                     </div>
                 )}
             </div>
