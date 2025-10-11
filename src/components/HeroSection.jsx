@@ -43,7 +43,7 @@ export default function HeroSection() {
 
                             <div className="flex items-center space-x-4">
                                 <div className="w-16 h-1 bg-gradient-to-r from-purple-600 to-pink-600"></div>
-                                <p className="text-xl text-gray-600 font-medium font-['Inter']">Informatics Student • Full-stack Developer</p>
+                                <p className="text-xl text-gray-600 font-medium font-['Inter']">Computer Science • Software Engineering</p>
                             </div>
                         </div>
 
