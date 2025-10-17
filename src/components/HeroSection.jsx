@@ -25,7 +25,7 @@ export default function HeroSection() {
 
                             {/* Main Profile Image */}
                             <div className="relative z-10">
-                                <img src={fotoprofil} alt="Foto Profil" className="w-100 h-100 rounded-full object-cover shadow-2xl border-8 border-white" />
+                                <img src={fotoprofil} alt="Foto Profil" className="w-80 h-80 rounded-full object-cover shadow-2xl border-8 border-white" />
                             </div>
                         </div>
                     </div>

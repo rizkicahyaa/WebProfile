@@ -16,12 +16,20 @@ export const projects = [
         delay: 100,
     },
     {
+        title: "MuseGuide",
+        description: "A museum recommendation website in Yogyakarta using React, Tailwind CSS, Node.js and MySQL",
+        tech: ["Vite", "Javascript", "React", "Tailwind CSS", "Node.js", "MySQL"],
+        link: "https://github.com/rizkicahyaa/fe-museguide",
+        image: "/images/museguide.png",
+        delay: 200,
+    },
+    {
         title: "ClaireBlog",
         description: "A blog creation system with a responsive layout using PHP, MySQL, Tailwind CSS, and Docker",
         tech: ["PHP", "Tailwind CSS", "MySQL", "Docker"],
         link: "https://github.com/rizkicahyaa/ClaireBlog",
         image: "/images/blog-system.png",
-        delay: 200,
+        delay: 300,
     },
     {
         title: "MovieTix",
@@ -29,7 +37,7 @@ export const projects = [
         tech: ["PHP", "Bootstrap", "MySQL"],
         link: "https://github.com/Fauzi-Taufiq/bioskop",
         image: "/images/cinema-ticket-booking.png",
-        delay: 300,
+        delay: 400,
     },
     {
         title: "NgaduClaire",
@@ -37,7 +45,7 @@ export const projects = [
         tech: ["PHP", "Bootstrap", "MySQL"],
         link: "https://github.com/rizkicahyaa/ngadu-claire",
         image: "/images/public-complaint.png",
-        delay: 400,
+        delay: 500,
     },
     {
         title: "Lost Lantern Studio",
@@ -45,7 +53,7 @@ export const projects = [
         tech: ["HTML", "Tailwind CSS"],
         link: "https://github.com/rizkicahyaa/lostlantern-page",
         image: "/images/lost-lantern.png",
-        delay: 500,
+        delay: 600,
     },
     {
         title: "Ngawikerto Hotel Ticket Booking System (UI/UX)",
@@ -53,7 +61,7 @@ export const projects = [
         tech: ["Figma"],
         link: "https://www.figma.com/design/eSa9brf8IkddzMcMuTHBG2/Sistem-Pemesanan-Tiket-Hotel?node-id=0-1&t=K0ksMtmmtNOVZMN9-1",
         image: "/images/hotel-booking-uiux.png",
-        delay: 600,
+        delay: 700,
     },
     {
         title: "PayCuan E-Wallet (UI/UX)",
@@ -61,6 +69,6 @@ export const projects = [
         tech: ["Figma"],
         link: "https://www.figma.com/design/kW5uDRZwaYyAR7339g3jhz/Mockup-Sistem-E-Wallet--PayCuan-?node-id=119-3&t=tugfB4IN6ZLYsd4h-1",
         image: "/images/paycuan.png",
-        delay: 700,
+        delay: 800,
     },
 ];
