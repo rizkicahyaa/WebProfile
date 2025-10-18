@@ -1,5 +1,5 @@
 import React from "react";
-import fotoprofil from "../assets/profile-pic-2.jpg";
+import fotoprofil from "../assets/profile-pic-3.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faInstagram, faFacebook, faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
 
@@ -24,8 +24,8 @@ export default function HeroSection() {
                             <div className="absolute -bottom-8 -left-8 w-24 h-24 bg-gradient-to-br from-pink-200 to-purple-200 rounded-full opacity-60 animate-bounce"></div>
 
                             {/* Main Profile Image */}
-                            <div className="relative z-10">
-                                <img src={fotoprofil} alt="Foto Profil" className="w-80 h-80 rounded-full object-cover shadow-2xl border-8 border-white" />
+                            <div className="relative z-10 w-80 h-80 sm:w-56 sm:h-56 md:w-100 md:h-100 rounded-full overflow-hidden border-8 border-white shadow-2xl">
+                                <img src={fotoprofil} alt="Foto Profil" className="w-full h-full object-cover" />
                             </div>
                         </div>
                     </div>
