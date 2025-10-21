@@ -2,14 +2,9 @@ const ProjectCard = ({ title, description, tech, link, delay, image }) => {
     return (
         <div className="group relative h-full" data-aos="flip-left" data-aos-delay={delay}>
             <div className="bg-white rounded-3xl overflow-hidden shadow-xl border border-gray-100 transition-all duration-500 hover:shadow-2xl hover:-translate-y-4 hover:rotate-1 flex flex-col h-full">
-
                 {image && (
                     <div className="p-2">
-                        <img
-                            src={image}
-                            alt={title}
-                            className="w-full h-48 object-cover rounded-xl transition-transform duration-500 group-hover:scale-105"
-                        />
+                        <img src={image} alt={title} className="w-full h-48 object-cover rounded-xl transition-transform duration-500 group-hover:scale-105" />
                     </div>
                 )}
 
@@ -23,15 +18,12 @@ const ProjectCard = ({ title, description, tech, link, delay, image }) => {
                             </span>
                         ))}
                     </div>
-                    <a href={link} target="_blank" rel="noopener noreferrer" className="self-start bg-gradient-to-r from-purple-600 to-pink-600 text-white font-semibold px-6 py-3 rounded-full text-sm transition duration-300 hover:shadow-lg font-['Inter']"
-                    >
+                    <a href={link} target="_blank" rel="noopener noreferrer" className="self-start bg-gradient-to-r from-purple-600 to-pink-600 text-white font-semibold px-6 py-3 rounded-full text-sm transition duration-300 hover:shadow-lg font-['Inter']">
                         View Project
                     </a>
                 </div>
-
             </div>
         </div>
-
     );
 };
 
