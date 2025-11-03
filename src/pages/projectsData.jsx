@@ -28,7 +28,7 @@ export const projects = [
         description: "A productivity timer web application that helps you stay focused, manage your time, and get more done (pomodoro).",
         tech: ["Vite", "Typescript", "React", "Tailwind CSS"],
         link: "https://github.com/rizkicahyaa/focsy",
-        image: "/images/focsy.png",
+        image: "/images/focsy-2.png",
         delay: 300,
     },
     {
