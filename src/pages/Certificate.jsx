@@ -5,19 +5,19 @@ const certificates = [
         title: "Laboratory Assistant: Programming",
         issuer: "Forum Asisten",
         year: "2025",
-        credentialUrl: "https://example.com/frontend-certificate"
+        credentialUrl: "https://forumasisten.or.id/sertifikat/2901780122c5efa6e6c/show"
     },
     {
         title: "Laboratory Assistant: Web Programming",
         issuer: "Forum Asisten",
         year: "2025",
-        credentialUrl: "https://example.com/frontend-certificate"
+        credentialUrl: "https://forumasisten.or.id/sertifikat/39317511252d680f935/show"
     },
     {
         title: "Code Generation and Optimization Using IBM Granite",
         issuer: "IBM",
         year: "2025",
-        credentialUrl: "https://example.com/frontend-certificate"
+        credentialUrl: "https://www.credly.com/badges/c2f5ed6a-9300-44e3-81f9-bb0718caa57a/public_url"
     }
 ];
 
@@ -53,7 +53,7 @@ export default function Certificate() {
                                 rel="noopener noreferrer"
                                 className="inline-flex items-center gap-2 text-purple-600 hover:text-purple-800 font-semibold font-['Inter']"
                             >
-                                Lihat Kredensial
+                                View Credential
                                 <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 7l-10 10m0-10h10v10" />
                                 </svg>
