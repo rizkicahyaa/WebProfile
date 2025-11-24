@@ -14,6 +14,11 @@ const certificates = [
         credentialUrl: "https://forumasisten.or.id/sertifikat/39317511252d680f935/show"
     },
     {
+        title: "Laboratory Assistant: Advance Programming",
+        issuer: "Forum Asisten",
+        year: "2025"
+    },
+    {
         title: "Code Generation and Optimization Using IBM Granite",
         issuer: "IBM",
         year: "2025",
