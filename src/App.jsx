@@ -10,6 +10,7 @@ import EduEx from "./components/EduEx.jsx";
 import Projects from "./pages/Projects.jsx";
 import Skills from "./components/Skills.jsx";
 import Contact from "./pages/Contact.jsx";
+import Certificate from "./pages/Certificate.jsx";
 import Footer from "./components/Footer.jsx";
 
 
@@ -36,6 +37,7 @@ function App() {
                 }
             />
             <Route path="/projects" element={<Projects />} />
+            <Route path="/certificate" element={<Certificate />} />
             <Route path="/contact" element={<Contact />} />
         </Routes>
         <Footer />

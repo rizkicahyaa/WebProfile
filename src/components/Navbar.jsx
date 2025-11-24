@@ -2,7 +2,7 @@ import React from "react";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faHouse, faBlog, faFolderOpen, faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import { faHouse, faBlog, faFolderOpen, faFile, faEnvelope } from "@fortawesome/free-solid-svg-icons";
 
 export default function Navbar() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -47,6 +47,14 @@ export default function Navbar() {
                             <span className="relative z-10 inline-flex items-center gap-2">
                                 <FontAwesomeIcon icon={faFolderOpen} />
                                 Project
+                            </span>
+                            <div className="absolute inset-0 bg-purple-100 rounded-full scale-0 group-hover:scale-100 transition-transform duration-300"></div>
+                        </Link>
+
+                        <Link to="/certificate" className="text-gray-600 hover:text-purple-600 transition-all duration-300 font-medium relative group font-['Inter']">
+                            <span className="relative z-10 inline-flex items-center gap-2">
+                                <FontAwesomeIcon icon={faFile} />
+                                Certificate
                             </span>
                             <div className="absolute inset-0 bg-purple-100 rounded-full scale-0 group-hover:scale-100 transition-transform duration-300"></div>
                         </Link>
@@ -98,6 +106,11 @@ export default function Navbar() {
                         <Link to="/projects" className="text-gray-600 hover:text-purple-600 transition duration-300 font-medium font-['Inter'] inline-flex items-center gap-2" onClick={toggleMenu}>
                             <FontAwesomeIcon icon={faFolderOpen} />
                             Project
+                        </Link>
+
+                        <Link to="/certificate" className="text-gray-600 hover:text-purple-600 transition duration-300 font-medium font-['Inter'] inline-flex items-center gap-2" onClick={toggleMenu}>
+                            <FontAwesomeIcon icon={faCertificate} />
+                            Certificate
                         </Link>
 
                         <Link to="/contact" className="text-gray-600 hover:text-purple-600 transition duration-300 font-medium font-['Inter'] inline-flex items-center gap-2" onClick={toggleMenu}>
