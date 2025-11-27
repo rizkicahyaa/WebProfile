@@ -20,7 +20,7 @@ export default function Navbar() {
                         <span className="text-gray-700">Cahya</span>
                     </div>
 
-                     {/* desktop menu */}
+                    {/* desktop menu */}
                     <div className="hidden md:flex space-x-8">
                         <Link to="/" className="text-gray-600 hover:text-purple-600 transition-all duration-300 font-medium relative group font-['Inter']">
                             <span className="relative z-10 inline-flex items-center gap-2">
@@ -30,12 +30,7 @@ export default function Navbar() {
                             <div className="absolute inset-0 bg-purple-100 rounded-full scale-0 group-hover:scale-100 transition-transform duration-300"></div>
                         </Link>
 
-                        <a
-                            href="https://medium.com/@rizki.cahya03"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="text-gray-600 hover:text-purple-600 transition-all duration-300 font-medium relative group font-['Inter']"
-                        >
+                        <a href="https://medium.com/@rizki.cahya03" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-purple-600 transition-all duration-300 font-medium relative group font-['Inter']">
                             <span className="relative z-10 inline-flex items-center gap-2">
                                 <FontAwesomeIcon icon={faBlog} />
                                 Blog
@@ -92,13 +87,7 @@ export default function Navbar() {
                             Home
                         </Link>
 
-                        <a
-                            href="https://medium.com/@rizki.cahya03"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="text-gray-600 hover:text-purple-600 transition duration-300 font-medium font-['Inter'] inline-flex items-center gap-2"
-                            onClick={toggleMenu}
-                        >
+                        <a href="https://medium.com/@rizki.cahya03" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-purple-600 transition duration-300 font-medium font-['Inter'] inline-flex items-center gap-2" onClick={toggleMenu}>
                             <FontAwesomeIcon icon={faBlog} />
                             Blog
                         </a>
@@ -109,7 +98,7 @@ export default function Navbar() {
                         </Link>
 
                         <Link to="/certificate" className="text-gray-600 hover:text-purple-600 transition duration-300 font-medium font-['Inter'] inline-flex items-center gap-2" onClick={toggleMenu}>
-                            <FontAwesomeIcon icon={faCertificate} />
+                            <FontAwesomeIcon icon={faFile} />
                             Certificate
                         </Link>
 
@@ -122,4 +111,4 @@ export default function Navbar() {
             </div>
         </nav>
     );
-};
+}
