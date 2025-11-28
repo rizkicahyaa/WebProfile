@@ -14,7 +14,7 @@ const certificates = [
         credentialUrl: "https://forumasisten.or.id/sertifikat/39317511252d680f935/show",
     },
     {
-        title: "Laboratory Assistant: Advance Programming",
+        title: "Laboratory Assistant: Advanced Programming",
         issuer: "Forum Asisten",
         year: "2025",
     },
@@ -22,7 +22,7 @@ const certificates = [
         title: "Code Generation and Optimization Using IBM Granite",
         issuer: "IBM, Hacktiv8",
         year: "2025",
-        credentialUrl: "https://www.credly.com/badges/c2f5ed6a-9300-44e3-81f9-bb0718caa57a/public_url",
+        credentialUrl: "https://drive.google.com/file/d/1DOc5Qd518RZNcmmZJZu2KMn9PbRnsLtf/view?usp=sharing",
     },
     {
         title: "Workshop Full Stack Developer HIMASI x BPC Amikom",
@@ -35,6 +35,12 @@ const certificates = [
         issuer: "AMD",
         year: "2025",
         credentialUrl: "https://drive.google.com/file/d/121g7uiIsBYLM0-u8Z5r9-CTW0wKVMmXB/view?usp=sharing",
+    },
+    {
+        title: "Seminar Nasional Informatika 2025",
+        issuer: "MSV Cinema, Universitas Amikom Yogyakarta",
+        year: "2025",
+        credentialUrl: "https://drive.google.com/file/d/1fdw94rSwWXatKyb_tw_DueBwH-rdvbAt/view?usp=sharing",
     },
 ];
 
